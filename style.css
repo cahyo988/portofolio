@@ -1,0 +1,23 @@
+.fotoku {
+    margin-top: -6rem;
+    position: relative; /* Pastikan elemen utama relatif */
+    min-height: 100vh;
+}
+
+.fotoku::before {
+    content: '';
+    position: absolute; /* Posisi absolut untuk elemen pseudo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/background.jpg'); 
+    background-size: cover; /* Menggunakan cover untuk menyesuaikan gambar */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Pastikan elemen pseudo berada di belakang */
+}
+nav{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0 /0.5);
+}
